@@ -1,0 +1,13 @@
+sudo: false
+language: node_js
+node_js:
+  - 'stable'
+  - 'lts/*'
+  - '6'
+script:
+  - npm run build
+  - npm test
+cache: npm
+notifications:
+  email:
+    on_success: never

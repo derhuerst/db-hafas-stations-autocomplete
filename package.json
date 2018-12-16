@@ -1,0 +1,45 @@
+{
+	"name": "db-hafas-stations-autocomplete",
+	"description": "Search through stations of DB.",
+	"version": "1.0.0",
+	"main": "index.js",
+	"files": [
+		"index.js",
+		"original-ids.json",
+		"tokens.json",
+		"scores.json",
+		"weights.json",
+		"nr-of-tokens.json",
+		"example.js"
+	],
+	"keywords": [
+		"db",
+		"deutsche bahn",
+		"hafas",
+		"stations",
+		"autocomplete",
+		"search",
+		"public transport"
+	],
+	"author": "Jannis R <mail@jannisr.de>",
+	"homepage": "https://github.com/derhuerst/db-hafas-stations-autocomplete",
+	"repository": "derhuerst/db-hafas-stations-autocomplete",
+	"bugs": "https://github.com/derhuerst/db-hafas-stations-autocomplete/issues",
+	"license": "ISC",
+	"engines": {
+		"node": ">=6"
+	},
+	"dependencies": {
+		"synchronous-autocomplete": "^2.0.0",
+		"tokenize-db-station-name": "^1.0.0"
+	},
+	"devDependencies": {
+		"cli-autocomplete": "^0.4.1",
+		"db-hafas-stations": "^0.1.1"
+	},
+	"scripts": {
+		"build": "node build.js",
+		"test": "env NODE_ENV=dev node test.js",
+		"prepublishOnly": "npm test"
+	}
+}
