@@ -1,7 +1,7 @@
 {
 	"name": "db-hafas-stations-autocomplete",
 	"description": "Search through stations of DB.",
-	"version": "1.0.0",
+	"version": "2.0.0",
 	"main": "index.js",
 	"files": [
 		"index.js",
@@ -16,10 +16,12 @@
 		"db",
 		"deutsche bahn",
 		"hafas",
+		"hafas-client",
 		"stations",
 		"autocomplete",
 		"search",
-		"public transport"
+		"public transport",
+		"transit"
 	],
 	"author": "Jannis R <mail@jannisr.de>",
 	"homepage": "https://github.com/derhuerst/db-hafas-stations-autocomplete",
@@ -43,6 +45,6 @@
 		"build": "node build.js",
 		"lint": "eslint .",
 		"test": "env NODE_ENV=dev node test.js",
-		"prepublishOnly": "npm run lint && npm test"
+		"prepublishOnly": "npm run lint && npm run build && npm test"
 	}
 }
