@@ -1,9 +1,8 @@
-sudo: false
 language: node_js
 node_js:
   - 'stable'
   - 'lts/*'
-  - '6'
+  - '16'
 script:
   - npm run build
   - npm test

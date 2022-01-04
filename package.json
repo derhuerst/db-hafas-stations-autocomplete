@@ -27,15 +27,15 @@
 	"bugs": "https://github.com/derhuerst/db-hafas-stations-autocomplete/issues",
 	"license": "ISC",
 	"engines": {
-		"node": ">=6"
+		"node": ">=16"
 	},
 	"dependencies": {
 		"synchronous-autocomplete": "^2.0.0",
-		"tokenize-db-station-name": "^1.0.0"
+		"tokenize-db-station-name": "^3.0.0"
 	},
 	"devDependencies": {
 		"cli-autocomplete": "^0.4.1",
-		"db-hafas-stations": "^0.1.1",
+		"db-hafas-stations": "^1.0.0",
 		"lodash.sortby": "^4.7.0"
 	},
 	"scripts": {
