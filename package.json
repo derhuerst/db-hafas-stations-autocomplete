@@ -36,11 +36,13 @@
 	"devDependencies": {
 		"cli-autocomplete": "^0.4.1",
 		"db-hafas-stations": "^1.0.0",
+		"eslint": "^8.6.0",
 		"lodash.sortby": "^4.7.0"
 	},
 	"scripts": {
 		"build": "node build.js",
+		"lint": "eslint .",
 		"test": "env NODE_ENV=dev node test.js",
-		"prepublishOnly": "npm test"
+		"prepublishOnly": "npm run lint && npm test"
 	}
 }
